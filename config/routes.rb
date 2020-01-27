@@ -7,3 +7,7 @@ Jets.application.routes.draw do
   # More info here: https://rubyonjets.com/docs/extras/assets-serving/
   any "*catchall", to: "jets/public#show"
 end
+
+Jets.application.routes.draw do
+  get 'posts', to: 'posts#index'
+end
